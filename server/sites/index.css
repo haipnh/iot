@@ -1,0 +1,225 @@
+body, html {
+  background-color: #F0A471;
+  width: 98%;
+  height: 98%;
+}
+
+.Panel{   
+   display: flex;
+   margin-top: 20px; margin-left: 20px;    
+   padding-top: 10px; padding-left: 10px; padding-right: 10px; padding-bottom: 10px;   
+   border: 3px solid;   
+}
+
+.Label{      
+   font-size: 25px;
+   font-weight: bold;
+   display: inline-block;
+   margin-bottom: 10px;
+}
+
+.Caption{
+   font-size: 25px;
+   display: inline-block;
+   margin-bottom: 10px;
+}
+
+.ThingPanel{
+   border: 1px solid;
+   text-align:center;
+   padding-top: 5px;  padding-bottom: 5px;padding-left: 5px; padding-right: 5px;
+   width: 10%;
+}
+
+.AutoPanel{
+   text-align:center;
+   border: 1px solid;
+   padding-top: 5px;  padding-bottom: 5px; padding-left: 5px; padding-right: 5px;
+   width: 10%;
+}
+
+.ConditionPanel{
+   border: 1px solid;
+   padding-top: 5px;  padding-bottom: 5px;padding-left: 5px; padding-right: 5px;
+   width: 50%;
+   display: flex;
+}
+
+.SubConditionPanel{
+   border: 1px solid;
+   padding-top: 10px;  padding-bottom: 5px; padding-left: 5px; padding-right: 5px;
+   width: 50%;
+   display: inline-block;
+}
+
+.LastChangePanel{
+   text-align:center;
+   border: 1px solid;
+   padding-top: 10px;  padding-bottom: 5px; padding-left: 5px; padding-right: 5px;
+   width: 30%;
+
+}
+/* Slider */
+.SliderContainer {
+   width: 100%; /* Width of the outside container */
+   text-align:center;
+}
+
+/* The Slider itself */
+.Slider {
+   -webkit-appearance: none; /* Override default CSS styles */
+   width: 95%; /* Full-width */
+   height: 10px; /* Specified height */   
+   border-radius: 5px;    
+   background: #d3d3d3; /* Grey background */
+   outline: none; /* Remove outline */
+   opacity: 0.8; /* Set transparency (for mouse-over effects on hover) */
+   -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+   transition: opacity .2s;   
+   margin-top: 10px; margin-bottom: 20px;
+   
+   display: inline-block;
+}
+
+.Slider::-webkit-slider-thumb {
+   -webkit-appearance: none; /* Override default look */
+   appearance: none; 
+   width: 25px;  /* Set a specific slider handle width */
+   height: 25px; /* Slider handle height */
+   border-radius: 50%; 
+   background: #4CAF50; /* Green background */
+   cursor: pointer; /* Cursor on hover */
+}
+
+.Slider::-moz-range-thumb {
+   width: 25px;/* Set a specific slider handle width */
+   height: 25px; /* Slider handle height */
+   border-radius: 50%;
+   background: #4CAF50; /* Green background */
+   cursor: pointer; /* Cursor on hover */
+}
+
+.SliderVal{
+   font-size: 25px;
+   text-align:center;   
+   background-color: lightgreen;
+   width: 95%;
+   display: inline-block;
+   
+}
+
+/* The switch - the box around the slider */
+.Switch {
+   position: relative;   
+   display: inline-block;
+   width: 60px;
+   height: 34px;
+   margin-top: 10px;
+   margin-right: 10px;
+   /* display: inline-block; */
+   /* float: left; */
+}
+
+/* Hide default HTML checkbox */
+.Switch input {
+   opacity: 0;
+   width: 0;
+   height: 0;
+}
+
+/* The slider */
+.slider {
+   position: absolute;
+   cursor: pointer;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: #ccc;
+   -webkit-transition: .4s;
+   transition: .4s;  
+}
+
+.slider:before {
+   position: absolute;
+   content: "";
+   height: 26px;
+   width: 26px;
+   left: 4px;
+   bottom: 4px;
+   background-color: white;
+   -webkit-transition: .4s;
+   transition: .4s;
+}
+
+input:checked + .slider {
+   background-color: #2196F3;
+}
+
+input:focus + .slider {
+   box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+   -webkit-transform: translateX(26px);
+   -ms-transform: translateX(26px);
+   transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round{
+   border-radius: 34px;  
+}
+
+.slider.round:before {
+   border-radius: 50%;
+}  
+
+.Combobox{   
+   margin-right: 10px;
+   height: 30px;
+   font-size: 25px;
+   /* min-width: 100px; */
+   /* width: 100px; */
+}
+
+.LastChange{
+   font-size: 25px;
+   text-align:center;
+   min-width: 250px;
+   width: 250px;
+   background-color: lightblue;
+   margin-right: 10px; 
+   display: inline-block;
+}
+
+.ControlPanel{
+height: 100%;
+   width: 100%;
+    position: relative;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+    
+    margin-bottom: 20px;
+}
+
+.Monitor{
+   height: 90%;
+   width: 95%;
+   position: relative;
+   padding-top: 20px;  padding-bottom: 20px;
+   padding-left: auto;  padding-right: auto;
+   margin: auto;
+}
+
+.Canvas{
+   display: block;
+   border: 3px solid;
+}
+
+
+

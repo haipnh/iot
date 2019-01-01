@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title> Controller </title>       
+      <link rel="stylesheet" type="text/css" href="index.css">
+   </head>
+
+   <body>	
+      <div class="ControlPanel">
+         <div class="Panel" id="Panel0">
+            <span class="ThingPanel" id="ThingPanel0">
+               <div class="Label"> Thing 1 </div> </br>               
+               <label class="Switch"> 	 
+                  <input type="checkbox" id="StateSwitch0" onChange="StateSwitchOnChange(this)">
+                  <span class="slider"> </span>
+               </label>            
+            </span>
+
+               <span class="AutoPanel">
+                  <div class="Caption"> Auto On </div> </br>               
+                  <label class="Switch" > 	 
+                     <input type="checkbox" id="AutoModeSwitch0" onChange="AutoModeSwitchOnChange(this)">
+                     <span class="slider round"> </span>
+                  </label>            
+               </span>
+            
+               <span class="ConditionPanel">
+                  <span class="SubConditionPanel">
+                        <span class="Caption" style="padding-left:5px;"> Based on </span>
+                        <select class="Combobox" style="float:right;" id="AutoBy0" onChange="AutoByOnChange(this)">
+                           <option value="Light">Light</option>
+                           <option value="SoilMoisture">SoilMoisture</option>
+                        </select> 
+                        </br>
+                        <span class="Caption" style="padding-left:5px;"> if </span>               
+                        <select class="Combobox" style="float:right;" id="IfGreaterThan0" onChange="IfGreaterThanOnChange(this)">
+                           <option value="Less">Less than</option>
+                           <option value="Greater">Greater than</option>
+                        </select>      
+                  </span>
+                  
+                  <span class="SubConditionPanel"> 
+                     <span class="SliderContainer">
+                        <input class="Slider" id="Slider0" type="range" min="0" max="100" value="0" onChange="SliderOnChange(this)" oninput="SliderOnInput(this)">                 
+                        <span class="SliderVal" id="SliderVal0"> </span> 
+                     </span>
+                  </span>                
+               </span>
+
+            <span class="LastChangePanel">
+                  <div class="Caption" > Last change </div>
+                  <div class="LastChange" id="LastChange0"></div>            
+            </span>         
+         </div> 
+          
+         <div class="Panel" id="Panel1">
+            <span class="ThingPanel" id="ThingPanel1">
+               <div class="Label"> Thing 2 </div> </br>               
+               <label class="Switch"> 	 
+                  <input type="checkbox" id="StateSwitch1" onChange="StateSwitchOnChange(this)">
+                  <span class="slider"> </span>
+               </label>            
+            </span>
+
+               <span class="AutoPanel">
+                  <div class="Caption"> Auto On </div> </br>               
+                  <label class="Switch" > 	 
+                     <input type="checkbox" id="AutoModeSwitch1" onChange="AutoModeSwitchOnChange(this)">
+                     <span class="slider round"> </span>
+                  </label>            
+               </span>
+            
+               <span class="ConditionPanel">
+                  <span class="SubConditionPanel">
+                        <span class="Caption" style="padding-left:5px;"> Based on </span>
+                        <select class="Combobox" style="float:right;" id="AutoBy1" onChange="AutoByOnChange(this)">
+                           <option value="Light">Light</option>
+                           <option value="SoilMoisture">SoilMoisture</option>
+                        </select> 
+                        </br>
+                        <span class="Caption" style="padding-left:5px;"> if </span>               
+                        <select class="Combobox" style="float:right;" id="IfGreaterThan1" onChange="IfGreaterThanOnChange(this)">
+                           <option value="Less">Less than</option>
+                           <option value="Greater">Greater than</option>
+                        </select>      
+                  </span>
+                  
+                  <span class="SubConditionPanel"> 
+                     <span class="SliderContainer">
+                        <input class="Slider" id="Slider1" type="range" min="0" max="100" value="0" onChange="SliderOnChange(this)" oninput="SliderOnInput(this)">                 
+                        <span class="SliderVal" id="SliderVal1"> </span> 
+                     </span>
+                  </span>                
+               </span>
+
+            <span class="LastChangePanel">
+                  <div class="Caption" > Last change </div>
+                  <div class="LastChange" id="LastChange1"></div>            
+            </span>         
+         </div> 
+         
+         <div class="Panel" id="Panel2">
+            <span class="ThingPanel" id="ThingPanel2">
+               <div class="Label"> Thing 3 </div> </br>                
+               <label class="Switch"> 	 
+                  <input type="checkbox" id="StateSwitch2" onChange="StateSwitchOnChange(this)">
+                  <span class="slider"> </span>
+               </label>            
+            </span>
+
+               <span class="AutoPanel">
+                  <div class="Caption"> Auto On </div> </br>               
+                  <label class="Switch" > 	 
+                     <input type="checkbox" id="AutoModeSwitch2" onChange="AutoModeSwitchOnChange(this)">
+                     <span class="slider round"> </span>
+                  </label>            
+               </span>
+            
+               <span class="ConditionPanel">
+                  <span class="SubConditionPanel">
+                        <span class="Caption" style="padding-left:5px;"> Based on </span>
+                        <select class="Combobox" style="float:right;" id="AutoBy2" onChange="AutoByOnChange(this)">
+                           <option value="Light">Light</option>
+                           <option value="SoilMoisture">SoilMoisture</option>
+                        </select> 
+                        </br>
+                        <span class="Caption" style="padding-left:5px;"> if </span>               
+                        <select class="Combobox" style="float:right;" id="IfGreaterThan2" onChange="IfGreaterThanOnChange(this)">
+                           <option value="Less">Less than</option>
+                           <option value="Greater">Greater than</option>
+                        </select>      
+                  </span>
+                  
+                  <span class="SubConditionPanel"> 
+                     <span class="SliderContainer">
+                        <input class="Slider" id="Slider2" type="range" min="0" max="100" value="0" onChange="SliderOnChange(this)" oninput="SliderOnInput(this)">                 
+                        <span class="SliderVal" id="SliderVal2"> </span> 
+                     </span>
+                  </span>                
+               </span>
+
+            <span class="LastChangePanel">
+                  <div class="Caption" > Last change </div>
+                  <div class="LastChange" id="LastChange2"></div>            
+            </span>         
+         </div>
+         
+         <div class="Panel" id="Panel3">
+            <span class="ThingPanel" id="ThingPanel3">
+               <div class="Label"> Thing 4 </div> </br>               
+               <label class="Switch"> 	 
+                  <input type="checkbox" id="StateSwitch3" onChange="StateSwitchOnChange(this)">
+                  <span class="slider"> </span>
+               </label>            
+            </span>
+
+               <span class="AutoPanel">
+                  <div class="Caption"> Auto On </div> </br>               
+                  <label class="Switch" > 	 
+                     <input type="checkbox" id="AutoModeSwitch3" onChange="AutoModeSwitchOnChange(this)">
+                     <span class="slider round"> </span>
+                  </label>            
+               </span>
+            
+               <span class="ConditionPanel">
+                  <span class="SubConditionPanel">
+                        <span class="Caption" style="padding-left:5px;"> Based on </span>
+                        <select class="Combobox" style="float:right;" id="AutoBy3" onChange="AutoByOnChange(this)">
+                           <option value="Light">Light</option>
+                           <option value="SoilMoisture">SoilMoisture</option>
+                        </select> 
+                        </br>
+                        <span class="Caption" style="padding-left:5px;"> if </span>               
+                        <select class="Combobox" style="float:right;" id="IfGreaterThan3" onChange="IfGreaterThanOnChange(this)">
+                           <option value="Less">Less than</option>
+                           <option value="Greater">Greater than</option>
+                        </select>      
+                  </span>
+                  
+                  <span class="SubConditionPanel"> 
+                     <span class="SliderContainer">
+                        <input class="Slider" id="Slider3" type="range" min="0" max="100" value="0" onChange="SliderOnChange(this)" oninput="SliderOnInput(this)">                 
+                        <span class="SliderVal" id="SliderVal3"> </span> 
+                     </span>
+                  </span>                
+               </span>
+
+            <span class="LastChangePanel">
+                  <div class="Caption" > Last change </div>
+                  <div class="LastChange" id="LastChange3"></div>            
+            </span>         
+         </div>
+      <div>  
+      
+      <div class="Monitor">
+         <canvas class="Canvas" id="canvas" responsive="true"> </canvas>      
+      </div>
+      
+      <script src="/socket.io/socket.io.js"></script>
+      <script type="text/javascript" src="Chart.min.js"></script>
+      <script type="text/javascript" src="index.js"></script>
+   </body>	
+</html>
