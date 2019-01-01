@@ -11,7 +11,8 @@
 SocketIOClient client;
 //char host[] = "34.219.71.32";  // AWS EC2 Instance's Public IP Address
 //char host[] = "52.38.245.177";  // AWS EC2 Instance's Elastic IP Address
-char host[] = "192.168.1.11";
+char host[] = "3.0.192.66";
+//char host[] = "192.168.1.11";
 int port = 80;
 
 extern String RID;
